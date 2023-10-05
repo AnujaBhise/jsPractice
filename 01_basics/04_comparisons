@@ -1,0 +1,29 @@
+// console.log(2 > 1);
+// console.log(2 >= 1 )
+// console.log(2 != 1);
+
+//Strings converted into numbers
+//comparions must be with same datatypes
+
+// console.log("2" > 1 );
+// console.log("02" > 1 );
+
+//avoid such types of conversions ...always prefer to clean code
+// console.log(null >0 )
+// console.log(null  == 0)
+// console.log(null >= 0)
+
+// console.log( undefined == 0)
+// console.log(undefined > 0)
+// console.log(undefined >= 0)
+
+//comaparion >= , >, < works differently than == 
+
+//strict check
+//means not only check value but also its datatypes
+
+console.log( "2"==2)
+//true becaause string converted into number and 2 ie equal to 2
+
+console.log("2"===2)
+//false as datatypes string is not eqaul to number
