@@ -1,4 +1,4 @@
-//arrays can store hetrogenous data
+    //arrays can store hetrogenous data
 //arrays are resizable...array elementd cannot be accessied by arbitary elements
 const   myArr = [0,1,2,3,4,5,true,"Anuja"]
 // console.log(myArr[0])
