@@ -71,7 +71,7 @@ for (const key in pro) {
 
 
 // for (const key in map) {
-//     console.log(key);}
+// console.log(key);}
    
 //no output given
 //for in doesnt run for map
