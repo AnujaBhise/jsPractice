@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Asynchronous</title>
+</head>
+<body>
+    <h1>Happy Anuja </h1>
+    <button id= "stop">STOP</button>
+
+</body>
+<script>
+    const sayAnuja =function (){
+        console.log(" I am the best ...Anuja")
+    }
+
+    const changeText = function (){
+    document.querySelector('h1').innerHTML = "I Am Anuja .the best"
+
+    }
+const changeMe = setTimeout(sayAnuja,2000)
+setTimeout(changeText,2000)
+// clearTimeout(changeMe)
+
+document.querySelector("#stop").addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log("STOPPED")
+})
+</script>
+</html>
