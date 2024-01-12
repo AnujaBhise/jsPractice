@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Request</title>
+</head>
+<body>
+    readyState property holds the status of the XMLHttpRequest.
+    Holds the status of the XMLHttpRequest.
+    0: request not initialized
+    1: server connection established
+    2: request received
+    3: processing request
+    4: request finished and response is ready
+</body>
+<script>
+    const requestURL = 'https://api.github.com/users/anujabhise'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestURL);
+    xhr.onreadystatechange =function (){
+        
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4)
+        {
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+    xhr.send()
+</script>
+</html>
