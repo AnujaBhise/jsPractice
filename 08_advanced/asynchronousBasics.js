@@ -58,7 +58,7 @@ function getData(dataId,getNextData){
 //     getData(2).then((res)=>{
 //         console.log(res)
 //     })
-// })
+// })p'
 
 getData(1)
 .then((res)=>{
