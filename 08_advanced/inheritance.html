@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil laborum vel dicta accusamus odit nulla beatae ipsum nesciunt nemo, possimus repudiandae tenetur at aliquam delectus temporibus aliquid quasi, debitis voluptatem.</p>
+</body>
+<script>
+
+
+    // class Person{
+    //     eat(){
+    //         console.log("person eats food");
+    //     }
+    //     sleep(){
+    //         console.log("person sleeps");
+    //     }
+    //     work(){
+    //         console.log("I am Nothing");
+    //     }
+    // }
+    // class engineer extends Person {
+    //     work(){
+    //         console.log("JAI SHRI RAM");
+    //     }
+    // }
+
+    // let Anuja = new engineer();
+    // Anuja.eat();
+    // Anuja.work ();
+    class Person{
+        constructor(branch){
+            console.log("enter parent constructor")
+            this.species ="homo sapiens";
+        }
+        eat(){
+            console.log("person eats food");
+        }
+        
+    }
+    class emp extends Person {
+        constructor(branch){
+            console.log("enter child constructor")
+            super(branch);//to invoke parent class contructor
+            this.branch = branch;
+            console.log("exit child constructor")
+        }
+        work(){
+            super.eat()//to invoke parent class contructor
+            console.log("JAI SHRI RAM");
+        }
+    }
+
+    let Anuja = new emp("development");
+  
+</script>
+</html>
